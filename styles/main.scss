@@ -1,0 +1,118 @@
+// SCSS FILE FOR NATE WEBSITE
+// DATE: 4/30/16
+
+// COLORS
+$lGray: #EDEDED;
+$red: #FF3333;
+
+// FONTS
+$droid: 'Droid Serif', serif;
+$droidSans: 'Droid Sans', sans-serif;
+$bold: 700;
+$regular: 400;
+$normal: regular;
+$italic: oblique;
+
+*
+{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+body
+{
+  background-color: $lGray;
+
+  nav
+  {
+
+  }//END NAV
+
+  main
+  {
+      // background-color: $red;
+      height:  500px;
+      width: 80%;
+      margin: 100px auto;
+
+      section
+      {
+
+          &#marginContent
+          {
+              width: 25%;
+              padding-top: 143px;
+
+              h2
+              {
+                font-family: $droidSans;
+                font-weight: $bold;
+                font-size: 1.8em;
+                line-height: 2em;
+                margin-bottom: 5px;
+              }
+
+              ul
+              {
+                @extend h1;
+                list-style-type: none;
+                margin-top: 54px;
+              }
+
+              h1
+              {
+                font-family: $droidSans;
+                font-weight: $regular;
+                font-size: 1.8em;
+                line-height: 1.5em;
+
+              }
+
+          }
+
+          &#mainContent
+          {
+              width: 70%;
+
+            article
+            {
+              width: 47.5%;
+
+              h3
+              {
+                font-family: $droidSans;
+                font-size: 1.8em;
+                line-height: 2em;
+              }
+
+              p
+              {
+                font-family: $droid;
+                font-size: 1.8em;
+                line-height: 2em;
+              }
+            }
+
+          }
+
+      }//END SECTION
+  }//END MAIN
+}//END BODY
+
+
+//GENERAL CLASSES
+.left
+{float: left;}
+.right
+{float: right;}
+.clear
+{clear: both;}
